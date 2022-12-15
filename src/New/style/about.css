@@ -1,0 +1,136 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00d0ff), to(rgba(10, 9, 9, 0.711))), url("../images/about-bg.jpg") no-repeat center/cover;
+  background: linear-gradient(#00d0ff, rgba(10, 9, 9, 0.711)), url("../images/about-bg.jpg") no-repeat center/cover;
+}
+
+.about .about-content {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-content .about-header {
+  width: auto;
+  text-align: center;
+}
+
+.about .about-content .about-header .icon {
+  width: 50px;
+  height: 50px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.about .about-content .about-header p {
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+  word-spacing: 4px;
+}
+
+.about .about-content .about-header h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.about .about-content .about-header .cards {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .about-content .about-header .cards .card {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 180px !important;
+  height: 220px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0;
+  margin: 0px 20px;
+}
+
+.about .about-content .about-header .cards .card .card-content {
+  max-width: 100px;
+}
+
+.about .about-content .about-header .cards .card .card-content .icon {
+  width: 50px;
+  height: 50px;
+  color: #00d0ff;
+  margin-bottom: 10px;
+}
+
+.about .about-content .about-header .cards .card .card-content p {
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.about .about-content .about-header .cards .card:hover {
+  background-color: black;
+}
+
+.about .about-content .about-header .cards .card:hover .card-content .icon {
+  color: #fda700;
+}
+
+.about .about-content .about-header .cards .card:hover .card-content p {
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .about .about-content .about-header {
+    margin: 20px 0px;
+  }
+  .about .about-content .about-header h1 {
+    font-size: 35px;
+  }
+  .about .about-content .about-header .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .about-content .about-header .cards .card {
+    margin: 20px 0px;
+    width: 220px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about .about-content .about-header {
+    width: auto;
+  }
+  .about .about-content .about-header h1 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

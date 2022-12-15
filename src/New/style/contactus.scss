@@ -1,0 +1,24 @@
+.contact{
+
+    .img-fluid{
+        height: 600px !important;
+    }
+
+
+    .btn:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+    }
+
+
+    @media screen and (max-width: 550px) {
+        .img-fluid{
+            height: 500px !important;
+        }
+
+        .btn{
+            padding: 10px 13px !important;
+        }
+    }
+}

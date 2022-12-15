@@ -1,0 +1,221 @@
+.bolg {
+    min-height: 100vh;
+
+
+
+    .bolg-header {
+        min-height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .bolg-content {
+            text-align: center;
+            width: 970px;
+            margin-top: 20px;
+
+            .icon {
+                color: #fda700;
+            }
+
+            h2 {
+                font-size: 48px;
+                font-weight: bold;
+                font-style: normal;
+                font-family: Roboto, Arial, Helvetica, sans-serif;
+
+            }
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                hr {
+                    width: 40px;
+                    border-bottom-width: 5px;
+                    border-bottom-color: black;
+                }
+            }
+
+            .small-paragraph {
+                color: #0EB3D6;
+                font-size: 18px;
+                word-spacing: 2px;
+                font-weight: 400;
+                margin-top: 10px;
+                margin-bottom: 0;
+
+            }
+
+        }
+
+        // service content for tablet
+        @media screen and (max-width: 1100px) {
+
+            .bolg-content {
+                width: 100%;
+
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+        }
+
+    }
+
+    // This styling is service cards for desktop 
+
+    .bolg-cards {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cards {
+            display: flex;
+            justify-content:space-evenly;
+            margin-bottom: 20px;
+
+            .card {
+                height: auto;
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fafafa;
+                border: none;
+
+
+                .card-content {
+
+                    padding: 15px;
+
+                    .card-image {
+                        text-align: center;
+                        margin-bottom: 20px;
+
+                        img {
+                            max-width: 400px;
+                            height:300px;
+                            position: relative;
+                        }
+
+                        p{
+                            position: absolute;
+                            top: 55%;
+                            left: 55%;
+                            background-color: #fda700;
+                            color: #fafafa;
+                            padding: 5px 15px;
+                        }
+                    }
+
+                    .card-data {
+                        max-width: 400px;
+                        text-align: center;
+
+
+                        h3 {
+                            font-size: 31px;
+                            cursor: pointer;
+                            font-weight: 400;
+                        }
+
+                        h3:hover {
+                            color:#fda700;
+                            transition: 0.5s;
+                        }
+
+                        button {
+                            font-size: 18px;
+                            color: #0EB3D6;
+                            font-family: inherit;
+                            cursor: pointer;
+                            position: relative;
+                            font-weight: 400;
+                            border: none;
+                            background: none;
+                            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                            transition-duration: 400ms;
+                            transition-property: color;
+                        }
+
+                        button:focus,
+                        button:hover {
+                            color:#fda700;
+                        }
+
+                        button:focus:after,
+                        button:hover:after {
+                            width: 100%;
+                            left: 0%;
+                        }
+
+                        button:after {
+                            content: "";
+                            pointer-events: none;
+                            bottom: -2px;
+                            left: 50%;
+                            position: absolute;
+                            width: 0%;
+                            height: 2px;
+                            background-color: #fda700;
+                            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                            transition-duration: 400ms;
+                            transition-property: width, left;
+                        }
+                    }
+                }
+
+
+            }
+
+            .card:hover {
+                background-color: #ffff;
+            }
+        }
+
+        // service cards for tablets
+        @media screen and (max-width: 1110px) {
+            .cards {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        // service cards for mobile
+        @media screen and (max-width: 520px) {
+            .cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .card {
+                    margin-bottom: 10px;
+                    .card-content {
+                        padding: 20px;
+
+                        .card-image{
+                            img{
+                                max-width: 300px;
+                            }
+
+                            p{
+                             left: 47%;
+                             top: 57%;
+                            }
+                        }
+                        .card-data {
+                            h3 {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

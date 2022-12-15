@@ -1,0 +1,141 @@
+.serviceOne {
+    min-height: 100vh;
+    background-color: burlywood;
+
+    div {
+        display: flex;
+
+        .service-image {
+            img {
+                max-width: 600px;
+                height: 400px;
+            }
+        }
+
+        .service-content {
+            div {
+                flex-direction: column;
+                margin: 10px;
+
+
+                h1 {
+                    font-size: 32px;
+                    max-width: 500px;
+                }
+
+                .cards {
+                    flex-direction: row;
+
+                    .card {
+                        .card-content {
+                            margin: 0;
+
+                            .card-icons {
+                                margin: 0;
+
+                                .icon {
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                            }
+
+                            .card-data {
+                                margin: 0;
+
+                                h5 {
+                                    margin: 0;
+                                }
+
+                                p {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        div {
+            flex-direction: column;
+
+            .service-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+
+
+            .service-content {
+                div {
+                    flex-direction: column;
+                    margin: 10px;
+
+
+
+                    h1 {
+                        font-size: 32px;
+                        max-width: 800px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 550px) {
+        div {
+            .service-image {
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            .service-content {
+                div {
+                    h1 {
+                        font-size: 20px;
+                    }
+
+                    .cards {
+                        flex-direction: column;
+
+                        .card {
+                            .card-content {
+                                margin: 0;
+
+                                .card-icons {
+                                    margin: 0;
+
+                                    .icon {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }
+
+                                .card-data {
+                                    margin: 0;
+
+                                    h5 {
+                                        margin: 0;
+                                    }
+
+                                    p {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

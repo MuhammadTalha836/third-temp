@@ -1,0 +1,120 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(#00d0ff, rgba(10, 9, 9, 0.711)), url('../images/about-bg.jpg') no-repeat center / cover;
+
+    .about-content {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .about-header {
+            width: auto;
+            text-align: center;
+
+            .icon{
+                width: 50px;
+                height: 50px;
+                color: white;
+                margin-bottom: 10px;
+            }
+            
+            p {
+                color: black;
+                font-size: 14px;
+                text-transform:uppercase;
+                margin: 10px 0px;
+                word-spacing: 4px;
+            }
+            h1 {
+                color: white;
+                font-size: 50px; 
+            }
+
+            
+
+            .cards{
+                margin: 20px 0px;
+                display: flex;
+                justify-content: space-between;
+                .card{
+                    transition: 0.2s;
+                    width: 180px !important;
+                    height: 220px !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0;
+                    margin: 0px 20px;
+                    .card-content{
+                        max-width: 100px;
+                        .icon{
+                            width: 50px;
+                            height: 50px;
+                            color:#00d0ff;
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            font-size: 18px;
+                            text-transform: capitalize;
+                            letter-spacing: 2px;
+                        }
+
+                    }
+                }
+
+                .card:hover{
+                    background-color: black;
+                    .card-content{
+                        .icon{
+                            color: #fda700;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// for the tablet responsiveness
+@media screen and (max-width: 1000px) {
+    .about {
+        .about-content {
+            .about-header {
+margin: 20px 0px;
+                h1 {
+                    font-size: 35px;
+                }
+                .cards{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .card{
+                        margin: 20px 0px;
+                        width: 220px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// mobile responsiveness
+@media screen and (max-width: 550px) {
+    .about {
+        .about-content {
+            .about-header {
+                width: auto;
+
+                h1 {
+                    font-size: 30px;
+                }
+
+            }
+        }
+    }
+}

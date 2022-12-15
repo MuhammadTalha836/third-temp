@@ -1,0 +1,19 @@
+.contact .img-fluid {
+  height: 600px !important;
+}
+
+.contact .btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 550px) {
+  .contact .img-fluid {
+    height: 500px !important;
+  }
+  .contact .btn {
+    padding: 10px 13px !important;
+  }
+}
+/*# sourceMappingURL=contactus.css.map */
